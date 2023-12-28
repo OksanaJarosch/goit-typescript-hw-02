@@ -10,7 +10,10 @@ export enum UserRole {
 }
 
 // Замініть наступний код на версію за допомогою Record
-const RoleDescription = {
+
+type OurUserRoles = Record<UserRole, string>;
+
+const RoleDescription: OurUserRoles = {
   admin: 'Admin User',
   editor: 'Editor User',
   guest: 'Guest User',
