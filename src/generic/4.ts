@@ -6,9 +6,8 @@ interface Props {
   title: "string"
 }
 
-class Component <Props>{
-  constructor (public props:Props) {
-
+class Component <T>{
+  constructor (public props:T) {
   }
 }
 
